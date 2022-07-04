@@ -1,4 +1,25 @@
 .navbar {
-    @apply flex items-center justify-between
+    @apply min-h-[90px] flex items-center justify-between duration-500
 }
 
+.nav-bar-arrange {
+    @apply bg-white duration-500
+}
+
+.scroll {
+    @apply  fixed top-0 right-0 left-0 w-full min-h-[70px] flex items-center justify-center gap-x-[14.4rem] bg-white-opacity duration-500
+}
+
+
+.button-blog-line {
+    display: block;
+    align-items: center;
+    width: 0%;
+    height: 1px;
+    background-color: #1d4ed8;
+    transition: all .5s;   
+}
+
+.button-blog:hover + .button-blog-line {
+        width: 100%;
+}
